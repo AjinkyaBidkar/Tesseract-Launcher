@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.ajinkya.androidlauncherapplication.MainActivity">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_bar"
+        style="@style/SearchViewStyle"
+        android:drawingCacheQuality="high"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.SearchView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/search_bar"
+        app:cardBackgroundColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/appDrawer_recylerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+       </android.support.v7.widget.RecyclerView>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
